@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EstimoteDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_all_demos">All Demos</string>
+    <string name="title_activity_list_beacons">ListBeaconsActivity</string>
+    <string name="title_activity_distance_beacon">DistanceBeaconActivity</string>
+    <string name="title_activity_notify_demo">NotifyDemoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_characteristics_demo">CharacteristicsDemoActivity</string>
+
+</resources>

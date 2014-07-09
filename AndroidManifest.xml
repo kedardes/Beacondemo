@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.i360.estimotedemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AllDemosActivity"
+            android:label="@string/title_activity_all_demos" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListBeaconsActivity"
+            android:label="@string/title_activity_list_beacons" >
+        </activity>
+        <activity
+            android:name=".DistanceBeaconActivity"
+            android:label="@string/title_activity_distance_beacon" >
+        </activity>
+
+        <service
+            android:name="com.estimote.sdk.service.BeaconService"
+            android:exported="false" />
+
+        <activity
+            android:name=".NotifyDemoActivity"
+            android:label="@string/title_activity_notify_demo" >
+        </activity>
+        <activity
+            android:name=".CharacteristicsDemoActivity"
+            android:label="@string/title_activity_characteristics_demo" >
+        </activity>
+    </application>
+
+</manifest>
